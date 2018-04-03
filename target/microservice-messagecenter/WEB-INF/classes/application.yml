@@ -1,0 +1,32 @@
+# Spring Boot configuration
+spring:
+  profiles:
+    active: development
+# Database mongodb://copec:DoiT7RVNZn0Gx6vPAii9Sj8BSrpJGs7OrSJHj6EJ8ngVLBV0871DcZz606GOKkHDox5BGY2ipHlk8mSYqgcaog==@copec.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+  data:
+    mongodb:
+      uri: mongodb://copec:NRJpJfhOj0BukpDwHRZJWZ3NN1LTCi0ErnaLeIbbPXFTeRkg4jM9KSVaOfcQ0XkiHwfmeNrKNjJzdmLpGNZuVA==@copec.documents.azure.com:10255/?ssl=true&replicaSet=globaldb 
+      #host: copec.documents.azure.com
+      #port: 10255
+      #repositories:
+      #  enabled: true
+      #database: globaldb
+      #username: copec
+      #password: DoiT7RVNZn0Gx6vPAii9Sj8BSrpJGs7OrSJHj6EJ8ngVLBV0871DcZz606GOKkHDox5BGY2ipHlk8mSYqgcaog==
+# Logging
+logging:
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+  level:
+    com.kaluzny: DEBUG
+    org.springframework: INFO
+    org.mongodb: DEBUG
+# Server configuration
+server:
+  port: 8080
+  sessionTimeout: 30
+# Security configuration
+security:
+  user:
+    name: user
+    password: user

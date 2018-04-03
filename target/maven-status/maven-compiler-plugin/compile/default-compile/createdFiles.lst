@@ -1,0 +1,5 @@
+com/kaluzny/Application.class
+com/kaluzny/domain/BookRepository.class
+com/kaluzny/Program.class
+com/kaluzny/web/BookController.class
+com/kaluzny/domain/Book.class
